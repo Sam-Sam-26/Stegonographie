@@ -37,7 +37,7 @@ namespace HiddingTextInImage
 
             if (binaryMessage.Length > maxCapacity)
             {
-                MessageBox.Show("Le message est trop long comparé à la taille de l'image!", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("The message is too long !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -101,11 +101,11 @@ namespace HiddingTextInImage
         {
             if(tbMsg.Text == "")
             {
-                MessageBox.Show("Vous devez taper un texte", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("You have to type a message", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if(filePath == "")
             {
-                MessageBox.Show("Vous devez séléctioner un fichier", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("You have to select a file", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else{
                 binaryMessage = StringToBinary(tbMsg.Text);
@@ -145,11 +145,11 @@ namespace HiddingTextInImage
                 }
                 if (filePath != "")
                 {
-                    lblFichierSelectionne.Text = "fichier séléctionné : " + filename + ".png";
+                    lblFichierSelectionne.Text = "file selected : " + filename + ".png";
                 }
                 else
                 {
-                    lblFichierSelectionne.Text = "Aucun fichier séléctionné";
+                    lblFichierSelectionne.Text = "No file selected";
                 }
             }
         }

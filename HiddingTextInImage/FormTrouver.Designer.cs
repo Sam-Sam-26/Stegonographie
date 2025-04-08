@@ -66,7 +66,7 @@
             this.btnImport.Name = "btnImport";
             this.btnImport.Size = new System.Drawing.Size(496, 37);
             this.btnImport.TabIndex = 3;
-            this.btnImport.Text = "Importer une image";
+            this.btnImport.Text = "Import image";
             this.btnImport.UseVisualStyleBackColor = true;
             this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
             // 
@@ -85,18 +85,18 @@
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(442, 62);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 26);
+            this.label1.Size = new System.Drawing.Size(93, 26);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Message caché :";
+            this.label1.Text = "Message :";
             // 
             // lblFichierSelectionne
             // 
             this.lblFichierSelectionne.AutoSize = true;
             this.lblFichierSelectionne.Location = new System.Drawing.Point(12, 359);
             this.lblFichierSelectionne.Name = "lblFichierSelectionne";
-            this.lblFichierSelectionne.Size = new System.Drawing.Size(126, 13);
+            this.lblFichierSelectionne.Size = new System.Drawing.Size(80, 13);
             this.lblFichierSelectionne.TabIndex = 6;
-            this.lblFichierSelectionne.Text = "Aucun fichier séléctionné";
+            this.lblFichierSelectionne.Text = "No file selected";
             // 
             // FormTrouver
             // 
@@ -113,7 +113,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormTrouver";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormTrouver";
+            this.Text = "Decrypt";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormTrouver_FormClosed);
             this.Load += new System.EventHandler(this.FormTrouver_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

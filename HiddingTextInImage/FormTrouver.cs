@@ -34,62 +34,6 @@ namespace HiddingTextInImage
             Environment.Exit(4);
         }
 
-        //public void RecupererMessage()
-        //{
-        //    string message = "";
-        //    Bitmap image = new Bitmap(filePath);
-        //    string currentChar = "";
-        //    bool stop = false;
-        //    for (int x = 0; x < image.Width && !stop; x++)
-        //    {
-        //        for (int y = 0; y < image.Height && !stop; y++)
-        //        {
-        //            Color pixelColor = image.GetPixel(x, y);
-
-
-        //            char charAPixelColor = (char)pixelColor.A;
-        //            string newApixelColor = Convert.ToString(charAPixelColor, 2).PadLeft(8, '0');
-        //            List<char> newApixelColorList = newApixelColor.ToList();
-        //            currentChar += newApixelColorList[newApixelColorList.Count() - 1];
-
-        //            char charRPixelColor = (char)pixelColor.R;
-        //            string newRpixelColor = Convert.ToString(charRPixelColor, 2).PadLeft(8, '0');
-        //            List<char> newRpixelColorList = newRpixelColor.ToList();
-        //            currentChar += newRpixelColorList[newRpixelColorList.Count() - 1];
-
-        //            char charGPixelColor = (char)pixelColor.G;
-        //            string newGpixelColor = Convert.ToString(charGPixelColor, 2).PadLeft(8, '0');
-        //            List<char> newGpixelColorList = newGpixelColor.ToList();
-        //            currentChar += newGpixelColorList[newGpixelColorList.Count() - 1];
-
-        //            char charBPixelColor = (char)pixelColor.B;
-        //            string newBpixelColor = Convert.ToString(charBPixelColor, 2).PadLeft(8, '0');
-        //            List<char> newBpixelColorList = newBpixelColor.ToList();
-        //            currentChar += newBpixelColorList[newBpixelColorList.Count() - 1];
-
-        //            if (currentChar.Length == 8)
-        //            {
-        //                if(currentChar == "00000000")
-        //                {
-        //                    stop = true;
-        //                    break;
-        //                }
-        //                //currentChar = 
-        //                message += currentChar;
-        //                currentChar = "";
-        //            }
-        //        }
-        //        if (currentChar.Length == 8)
-        //        {
-        //            if (currentChar == "00000000")
-        //            {
-        //                break;
-        //            }
-        //        }
-        //    }
-        //    tbxMessage.Text = message + "\nmessage fini";
-        //}
-
         public void RecupererMessage()
         {
             string message = "";
@@ -127,7 +71,7 @@ namespace HiddingTextInImage
                 }
             }
 
-            tbxMessage.Text = message + "\r\n--------------------------------------------| message fini |--------------------------------------------";
+            tbxMessage.Text = message + "\r\n------------------------------------------| end of message |-----------------------------------------";
         }
 
 

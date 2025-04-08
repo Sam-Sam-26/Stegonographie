@@ -36,21 +36,23 @@
             // 
             // btnCacher
             // 
-            this.btnCacher.Location = new System.Drawing.Point(195, 221);
+            this.btnCacher.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCacher.Location = new System.Drawing.Point(196, 238);
             this.btnCacher.Name = "btnCacher";
             this.btnCacher.Size = new System.Drawing.Size(251, 85);
             this.btnCacher.TabIndex = 0;
-            this.btnCacher.Text = "Cacher";
+            this.btnCacher.Text = "ENCRYPT";
             this.btnCacher.UseVisualStyleBackColor = true;
             this.btnCacher.Click += new System.EventHandler(this.btnCacher_Click);
             // 
             // btnTrouver
             // 
-            this.btnTrouver.Location = new System.Drawing.Point(497, 221);
+            this.btnTrouver.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrouver.Location = new System.Drawing.Point(498, 238);
             this.btnTrouver.Name = "btnTrouver";
             this.btnTrouver.Size = new System.Drawing.Size(251, 85);
             this.btnTrouver.TabIndex = 1;
-            this.btnTrouver.Text = "Trouver";
+            this.btnTrouver.Text = "DECRYPT";
             this.btnTrouver.UseVisualStyleBackColor = true;
             this.btnTrouver.Click += new System.EventHandler(this.btnTrouver_Click);
             // 
@@ -76,7 +78,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cacher dans une image";
+            this.Text = "Menu";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.ResumeLayout(false);
 
