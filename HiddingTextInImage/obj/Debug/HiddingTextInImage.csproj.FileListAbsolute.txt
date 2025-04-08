@@ -1,0 +1,46 @@
+C:\Users\SAMUELSCHMD2\Documents\pour moi\HiddingTextInImage\HiddingTextInImage\bin\Debug\HiddingTextInImage.exe.config
+C:\Users\SAMUELSCHMD2\Documents\pour moi\HiddingTextInImage\HiddingTextInImage\bin\Debug\HiddingTextInImage.exe
+C:\Users\SAMUELSCHMD2\Documents\pour moi\HiddingTextInImage\HiddingTextInImage\bin\Debug\HiddingTextInImage.pdb
+C:\Users\SAMUELSCHMD2\Documents\pour moi\HiddingTextInImage\HiddingTextInImage\obj\Debug\HiddingTextInImage.csproj.AssemblyReference.cache
+C:\Users\SAMUELSCHMD2\Documents\pour moi\HiddingTextInImage\HiddingTextInImage\obj\Debug\HiddingTextInImage.Form1.resources
+C:\Users\SAMUELSCHMD2\Documents\pour moi\HiddingTextInImage\HiddingTextInImage\obj\Debug\HiddingTextInImage.Properties.Resources.resources
+C:\Users\SAMUELSCHMD2\Documents\pour moi\HiddingTextInImage\HiddingTextInImage\obj\Debug\HiddingTextInImage.csproj.GenerateResource.cache
+C:\Users\SAMUELSCHMD2\Documents\pour moi\HiddingTextInImage\HiddingTextInImage\obj\Debug\HiddingTextInImage.csproj.CoreCompileInputs.cache
+C:\Users\SAMUELSCHMD2\Documents\pour moi\HiddingTextInImage\HiddingTextInImage\obj\Debug\HiddingTextInImage.exe
+C:\Users\SAMUELSCHMD2\Documents\pour moi\HiddingTextInImage\HiddingTextInImage\obj\Debug\HiddingTextInImage.pdb
+C:\Users\samue\Documents\C#\HiddingTextInImage\HiddingTextInImage\bin\Debug\HiddingTextInImage.exe.config
+C:\Users\samue\Documents\C#\HiddingTextInImage\HiddingTextInImage\bin\Debug\HiddingTextInImage.exe
+C:\Users\samue\Documents\C#\HiddingTextInImage\HiddingTextInImage\bin\Debug\HiddingTextInImage.pdb
+C:\Users\samue\Documents\C#\HiddingTextInImage\HiddingTextInImage\obj\Debug\HiddingTextInImage.csproj.AssemblyReference.cache
+C:\Users\samue\Documents\C#\HiddingTextInImage\HiddingTextInImage\obj\Debug\HiddingTextInImage.Form1.resources
+C:\Users\samue\Documents\C#\HiddingTextInImage\HiddingTextInImage\obj\Debug\HiddingTextInImage.FormCacher.resources
+C:\Users\samue\Documents\C#\HiddingTextInImage\HiddingTextInImage\obj\Debug\HiddingTextInImage.FormTrouver.resources
+C:\Users\samue\Documents\C#\HiddingTextInImage\HiddingTextInImage\obj\Debug\HiddingTextInImage.Properties.Resources.resources
+C:\Users\samue\Documents\C#\HiddingTextInImage\HiddingTextInImage\obj\Debug\HiddingTextInImage.csproj.GenerateResource.cache
+C:\Users\samue\Documents\C#\HiddingTextInImage\HiddingTextInImage\obj\Debug\HiddingTextInImage.csproj.CoreCompileInputs.cache
+C:\Users\samue\Documents\C#\HiddingTextInImage\HiddingTextInImage\obj\Debug\HiddingTextInImage.exe
+C:\Users\samue\Documents\C#\HiddingTextInImage\HiddingTextInImage\obj\Debug\HiddingTextInImage.pdb
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Exercices\WinForm\Stegonographie\HiddingTextInImage\bin\Debug\HiddingTextInImage.exe.config
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Exercices\WinForm\Stegonographie\HiddingTextInImage\bin\Debug\HiddingTextInImage.exe
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Exercices\WinForm\Stegonographie\HiddingTextInImage\bin\Debug\HiddingTextInImage.pdb
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Exercices\WinForm\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.csproj.AssemblyReference.cache
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Exercices\WinForm\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.Form1.resources
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Exercices\WinForm\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.FormCacher.resources
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Exercices\WinForm\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.FormTrouver.resources
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Exercices\WinForm\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.Properties.Resources.resources
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Exercices\WinForm\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.csproj.GenerateResource.cache
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Exercices\WinForm\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.csproj.CoreCompileInputs.cache
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Exercices\WinForm\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.exe
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Exercices\WinForm\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.pdb
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Projets\StegonographieV2\HiddingTextInImage\bin\Debug\HiddingTextInImage.exe.config
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Projets\StegonographieV2\HiddingTextInImage\bin\Debug\HiddingTextInImage.exe
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Projets\StegonographieV2\HiddingTextInImage\bin\Debug\HiddingTextInImage.pdb
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Projets\StegonographieV2\HiddingTextInImage\obj\Debug\HiddingTextInImage.csproj.AssemblyReference.cache
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Projets\StegonographieV2\HiddingTextInImage\obj\Debug\HiddingTextInImage.Form1.resources
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Projets\StegonographieV2\HiddingTextInImage\obj\Debug\HiddingTextInImage.FormCacher.resources
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Projets\StegonographieV2\HiddingTextInImage\obj\Debug\HiddingTextInImage.FormTrouver.resources
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Projets\StegonographieV2\HiddingTextInImage\obj\Debug\HiddingTextInImage.Properties.Resources.resources
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Projets\StegonographieV2\HiddingTextInImage\obj\Debug\HiddingTextInImage.csproj.GenerateResource.cache
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Projets\StegonographieV2\HiddingTextInImage\obj\Debug\HiddingTextInImage.csproj.CoreCompileInputs.cache
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Projets\StegonographieV2\HiddingTextInImage\obj\Debug\HiddingTextInImage.exe
+C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Projets\StegonographieV2\HiddingTextInImage\obj\Debug\HiddingTextInImage.pdb

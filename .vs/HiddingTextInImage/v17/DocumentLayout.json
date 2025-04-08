@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\SAMUELSCHMD2\\Documents\\PROG\\M.malambu\\C#\\Projets\\StegonographieV2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4D44B310-40FE-4FF1-A8C0-9092E0720ED8}|HiddingTextInImage\\HiddingTextInImage.csproj|c:\\users\\samuelschmd2\\documents\\prog\\m.malambu\\c#\\projets\\stegonographiev2\\hiddingtextinimage\\formtrouver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D44B310-40FE-4FF1-A8C0-9092E0720ED8}|HiddingTextInImage\\HiddingTextInImage.csproj|solutionrelative:hiddingtextinimage\\formtrouver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D44B310-40FE-4FF1-A8C0-9092E0720ED8}|HiddingTextInImage\\HiddingTextInImage.csproj|C:\\Users\\SAMUELSCHMD2\\Documents\\PROG\\M.malambu\\C#\\Projets\\StegonographieV2\\hiddingtextinimage\\formcacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D44B310-40FE-4FF1-A8C0-9092E0720ED8}|HiddingTextInImage\\HiddingTextInImage.csproj|solutionrelative:hiddingtextinimage\\formcacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D44B310-40FE-4FF1-A8C0-9092E0720ED8}|HiddingTextInImage\\HiddingTextInImage.csproj|C:\\Users\\SAMUELSCHMD2\\Documents\\PROG\\M.malambu\\C#\\Projets\\StegonographieV2\\hiddingtextinimage\\formtrouver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D44B310-40FE-4FF1-A8C0-9092E0720ED8}|HiddingTextInImage\\HiddingTextInImage.csproj|solutionrelative:hiddingtextinimage\\formtrouver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormCacher.cs",
+              "DocumentMoniker": "C:\\Users\\SAMUELSCHMD2\\Documents\\PROG\\M.malambu\\C#\\Projets\\StegonographieV2\\HiddingTextInImage\\FormCacher.cs",
+              "RelativeDocumentMoniker": "HiddingTextInImage\\FormCacher.cs",
+              "ToolTip": "C:\\Users\\SAMUELSCHMD2\\Documents\\PROG\\M.malambu\\C#\\Projets\\StegonographieV2\\HiddingTextInImage\\FormCacher.cs",
+              "RelativeToolTip": "HiddingTextInImage\\FormCacher.cs",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAuwMMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T12:44:53.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormTrouver.cs",
+              "DocumentMoniker": "C:\\Users\\SAMUELSCHMD2\\Documents\\PROG\\M.malambu\\C#\\Projets\\StegonographieV2\\HiddingTextInImage\\FormTrouver.cs",
+              "RelativeDocumentMoniker": "HiddingTextInImage\\FormTrouver.cs",
+              "ToolTip": "C:\\Users\\SAMUELSCHMD2\\Documents\\PROG\\M.malambu\\C#\\Projets\\StegonographieV2\\HiddingTextInImage\\FormTrouver.cs",
+              "RelativeToolTip": "HiddingTextInImage\\FormTrouver.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAmwHIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T11:25:35.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormTrouver.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\SAMUELSCHMD2\\Documents\\PROG\\M.malambu\\C#\\Projets\\StegonographieV2\\HiddingTextInImage\\FormTrouver.cs",
+              "RelativeDocumentMoniker": "HiddingTextInImage\\FormTrouver.cs",
+              "ToolTip": "C:\\Users\\SAMUELSCHMD2\\Documents\\PROG\\M.malambu\\C#\\Exercices\\WinForm\\Stegonographie\\HiddingTextInImage\\FormTrouver.cs [Design]",
+              "RelativeToolTip": "..\\..\\Exercices\\WinForm\\Stegonographie\\HiddingTextInImage\\FormTrouver.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T11:05:29.266Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
