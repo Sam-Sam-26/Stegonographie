@@ -1,7 +1,6 @@
 # Stegonography
----
 > This projet is not over
----
+> Feel free to give me suggestions and contribute
 ## Description
 This projet is currently not really complicated, the programs takes the pixel value in ARGB and puts every value in binary (8 bits). It then hides a message also converted in binary in the end of each byte adding 8bits of '0' to show it is the end of the message.
 ## Improvements
