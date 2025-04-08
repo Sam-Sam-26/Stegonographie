@@ -70,13 +70,25 @@ namespace HiddingTextInImage
                     }
                 }
             }
-
-            tbxMessage.Text = message + "\r\n------------------------------------------| end of message |-----------------------------------------";
+            if (!stop)
+            {
+                message = "";
+                MessageBox.Show("There is no message in that image", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                tbxMessage.Text = message + "\r\n------------------------------------------| end of message |-----------------------------------------";
+            }
         }
 
 
         private void btnImport_Click(object sender, EventArgs e)
         {
+            tbxMessage.Text = "";
+            filePath = "";
+            filename = "";
+            lblFichierSelectionne.Text = "No file selected";
+            pbxImage.Image = null;
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
 
@@ -94,11 +106,11 @@ namespace HiddingTextInImage
                 }
                 if (filePath != "")
                 {
-                    lblFichierSelectionne.Text = "fichier séléctionné : " + filename;
+                    lblFichierSelectionne.Text = "File selected : " + filename;
                 }
                 else
                 {
-                    lblFichierSelectionne.Text = "Aucun fichier séléctionné";
+                    lblFichierSelectionne.Text = "No file seleced";
                 }
             }
             if (filePath == "")
