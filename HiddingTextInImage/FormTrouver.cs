@@ -34,51 +34,115 @@ namespace HiddingTextInImage
             Environment.Exit(4);
         }
 
-        public void RecupererMessage()
-        {
-            string message = "";
-            Bitmap image = new Bitmap(filePath);
-            string currentChar = "";
+        //public void RecupererMessage()
+        //{
+        //    Loader form = new Loader();
+        //    form.Show();
 
+        //    string message = "";
+        //    Bitmap image = new Bitmap(filePath);
+        //    string currentChar = "";
+
+        //    bool stop = false;
+
+        //    for (int y = 0; y < image.Height && !stop; y++)
+        //    {
+        //        for (int x = 0; x < image.Width && !stop; x++)
+        //        {
+        //            Color pixel = image.GetPixel(x, y);
+
+        //            // On récupère les LSB de chaque composante (A, R, G, B)
+        //            currentChar += Convert.ToString(pixel.A, 2).PadLeft(8, '0')[7];
+        //            currentChar += Convert.ToString(pixel.R, 2).PadLeft(8, '0')[7];
+        //            currentChar += Convert.ToString(pixel.G, 2).PadLeft(8, '0')[7];
+        //            currentChar += Convert.ToString(pixel.B, 2).PadLeft(8, '0')[7];
+
+
+        //            form.Step();
+
+        //            while (currentChar.Length >= 8)
+        //            {
+        //                string byteStr = currentChar.Substring(0, 8);
+        //                currentChar = currentChar.Substring(8);
+
+        //                if (byteStr == "00000000")
+        //                {
+        //                    stop = true;
+        //                    break;
+        //                }
+
+        //                char c = (char)Convert.ToInt32(byteStr, 2);
+        //                message += c;
+        //            }
+        //        }
+        //    }
+        //    if (!stop)
+        //    {
+        //        message = "";
+        //        MessageBox.Show("There is no message in that image", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        //    }
+        //    else
+        //    {
+        //        tbxMessage.Text = message + "\r\n------------------------------------------| end of message |-----------------------------------------";
+        //    }
+        //    form.End();
+        //}
+
+        public async void RecupererMessage()
+        {
+            Loader form = new Loader();
+            form.Show();
+            form.Refresh(); // force affichage visuel
+
+            string message = "";
             bool stop = false;
 
-            for (int y = 0; y < image.Height && !stop; y++)
+            await Task.Run(() =>
             {
-                for (int x = 0; x < image.Width && !stop; x++)
+                Bitmap image = new Bitmap(filePath);
+                string currentChar = "";
+
+                for (int y = 0; y < image.Height && !stop; y++)
                 {
-                    Color pixel = image.GetPixel(x, y);
-
-                    // On récupère les LSB de chaque composante (A, R, G, B)
-                    currentChar += Convert.ToString(pixel.A, 2).PadLeft(8, '0')[7];
-                    currentChar += Convert.ToString(pixel.R, 2).PadLeft(8, '0')[7];
-                    currentChar += Convert.ToString(pixel.G, 2).PadLeft(8, '0')[7];
-                    currentChar += Convert.ToString(pixel.B, 2).PadLeft(8, '0')[7];
-
-                    while (currentChar.Length >= 8)
+                    for (int x = 0; x < image.Width && !stop; x++)
                     {
-                        string byteStr = currentChar.Substring(0, 8);
-                        currentChar = currentChar.Substring(8);
+                        Color pixel = image.GetPixel(x, y);
 
-                        if (byteStr == "00000000")
+                        currentChar += Convert.ToString(pixel.A, 2).PadLeft(8, '0')[7];
+                        currentChar += Convert.ToString(pixel.R, 2).PadLeft(8, '0')[7];
+                        currentChar += Convert.ToString(pixel.G, 2).PadLeft(8, '0')[7];
+                        currentChar += Convert.ToString(pixel.B, 2).PadLeft(8, '0')[7];
+
+                        form.Invoke((MethodInvoker)(() => form.Step()));
+
+                        while (currentChar.Length >= 8)
                         {
-                            stop = true;
-                            break;
-                        }
+                            string byteStr = currentChar.Substring(0, 8);
+                            currentChar = currentChar.Substring(8);
 
-                        char c = (char)Convert.ToInt32(byteStr, 2);
-                        message += c;
+                            if (byteStr == "00000000")
+                            {
+                                stop = true;
+                                break;
+                            }
+
+                            char c = (char)Convert.ToInt32(byteStr, 2);
+                            message += c;
+                        }
                     }
                 }
-            }
+            });
+
             if (!stop)
             {
                 message = "";
-                MessageBox.Show("There is no message in that image", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("There is no message in that image", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
                 tbxMessage.Text = message + "\r\n------------------------------------------| end of message |-----------------------------------------";
             }
+            await form.End();
         }
 
 
