@@ -117,7 +117,7 @@ namespace HiddingTextInImage
                         form.Invoke((MethodInvoker)(() => form.Step()));
 
                         // Simule un petit temps de traitement pour permettre au loader de suivre
-                        Thread.Sleep(1);
+                        Thread.Sleep(2);
 
                         while (currentChar.Length >= 8)
                         {
