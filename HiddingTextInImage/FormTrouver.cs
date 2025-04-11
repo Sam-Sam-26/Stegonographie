@@ -142,7 +142,7 @@ namespace HiddingTextInImage
             {
                 tbxMessage.Text = message + "\r\n------------------------------------------| end of message |-----------------------------------------";
             }
-            await form.End();
+            await form.End(); 
         }
 
 
