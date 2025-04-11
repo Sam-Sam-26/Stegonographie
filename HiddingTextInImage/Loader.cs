@@ -31,14 +31,21 @@ namespace HiddingTextInImage
 
         public void Step()
         {
-            pgbLoader.PerformStep();
+            if (pgbLoader.Value < pgbLoader.Maximum)
+            {
+                pgbLoader.PerformStep();
+                pgbLoader.Refresh(); // force la mise à jour visuelle
+            }
         }
+
         public async Task End()
         {
             pgbLoader.Value = pgbLoader.Maximum;
-            Thread.Sleep(800);
+            pgbLoader.Refresh(); // force affichage final
+            await Task.Delay(800); // meilleure que Thread.Sleep
             this.Hide();
         }
+
 
     }
 }
