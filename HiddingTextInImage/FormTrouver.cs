@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -115,6 +116,9 @@ namespace HiddingTextInImage
 
                         form.Invoke((MethodInvoker)(() => form.Step()));
 
+                        // Simule un petit temps de traitement pour permettre au loader de suivre
+                        Thread.Sleep(1);
+
                         while (currentChar.Length >= 8)
                         {
                             string byteStr = currentChar.Substring(0, 8);
@@ -132,6 +136,7 @@ namespace HiddingTextInImage
                     }
                 }
             });
+
 
             if (!stop)
             {

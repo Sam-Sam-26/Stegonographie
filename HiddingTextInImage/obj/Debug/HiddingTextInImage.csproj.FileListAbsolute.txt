@@ -57,3 +57,16 @@ C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Projets\Stegonographie\Hidding
 C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Projets\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.exe
 C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Projets\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.pdb
 C:\Users\SAMUELSCHMD2\Documents\PROG\M.malambu\C#\Projets\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.Loader.resources
+C:\Users\Admin\Documents\GitHub\Stegonographie\HiddingTextInImage\bin\Debug\HiddingTextInImage.exe.config
+C:\Users\Admin\Documents\GitHub\Stegonographie\HiddingTextInImage\bin\Debug\HiddingTextInImage.exe
+C:\Users\Admin\Documents\GitHub\Stegonographie\HiddingTextInImage\bin\Debug\HiddingTextInImage.pdb
+C:\Users\Admin\Documents\GitHub\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.Form1.resources
+C:\Users\Admin\Documents\GitHub\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.FormCacher.resources
+C:\Users\Admin\Documents\GitHub\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.FormTrouver.resources
+C:\Users\Admin\Documents\GitHub\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.Loader.resources
+C:\Users\Admin\Documents\GitHub\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.Properties.Resources.resources
+C:\Users\Admin\Documents\GitHub\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\GitHub\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.exe
+C:\Users\Admin\Documents\GitHub\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.pdb
