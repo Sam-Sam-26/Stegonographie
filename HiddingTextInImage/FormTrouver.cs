@@ -66,11 +66,11 @@ namespace HiddingTextInImage
                             form.Invoke((MethodInvoker)(() => form.Step()));
                         }catch (Exception ex)
                         {
-                            MessageBox.Show("Error while decrypting the image", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Error while decrypting the image", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning); // Changer en disant que l'opération a été annulée serait mieux conceptuellement
                             return;
                         }
 
-                        Thread.Sleep(2);
+                        // Thread.Sleep(2); Inutile le async fait son taff et donc la barre devient plus vite.
 
                         while (currentChar.Length >= 8)
                         {
@@ -91,7 +91,7 @@ namespace HiddingTextInImage
             });
 
 
-            if (!stop)
+            if (!stop) // faire une autre variable qui dit si une interruption a eu lieu ou pas (Conseil: CancelledTokenSource, cherche...)
             {
                 message = "";
                 MessageBox.Show("There is no message in that image", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
