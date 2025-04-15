@@ -31,7 +31,6 @@ namespace HiddingTextInImage
 
         public static void CacherTexte()
         {
-            imageFinale = new Bitmap(filePath);
 
             int maxCapacity = imageFinale.Width * imageFinale.Height * 4; // 4 bits par pixel (A, R, G, B)
 
@@ -108,12 +107,25 @@ namespace HiddingTextInImage
                 MessageBox.Show("You have to select a file", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else{
-                binaryMessage = StringToBinary(tbMsg.Text);
-                tbBinaire.Text = binaryMessage;
-                // appel de la fonction pour cacher le texte dans l'image
-                CacherTexte();
-                //pbResult.Image = Image.FromFile(filePath);
-                pbResult.Image = new Bitmap(imageFinale);
+                try
+                {
+                    imageFinale = new Bitmap(filePath);
+                    binaryMessage = StringToBinary(tbMsg.Text);
+                    tbBinaire.Text = binaryMessage;
+                    // appel de la fonction pour cacher le texte dans l'image
+                    CacherTexte();
+                    //pbResult.Image = Image.FromFile(filePath);
+                    pbResult.Image = new Bitmap(imageFinale);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Error opening the image", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    tbMsg.Text = "";
+                    lblFichierSelectionne.Text = "";
+                    filePath = "";
+                    filename = "";
+                    return;
+                }
             }
         }
         public static string StringToBinary(string data)
@@ -130,7 +142,7 @@ namespace HiddingTextInImage
             {
 
                 openFileDialog.InitialDirectory = "Documents";
-                openFileDialog.Filter = "png files (*.png)|*.png|All files (*.*)|*.*";
+                openFileDialog.Filter = "png files (*.png)|*.png";
                 openFileDialog.FilterIndex = 1;
                 openFileDialog.RestoreDirectory = true;
                 openFileDialog.Title = "Select your image";

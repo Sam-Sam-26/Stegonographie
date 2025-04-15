@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\SAMUELSCHMD2\\Documents\\PROG\\M.malambu\\C#\\Projets\\Stegonographie\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4D44B310-40FE-4FF1-A8C0-9092E0720ED8}|HiddingTextInImage\\HiddingTextInImage.csproj|c:\\users\\samuelschmd2\\documents\\prog\\m.malambu\\c#\\projets\\stegonographie\\hiddingtextinimage\\formcacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D44B310-40FE-4FF1-A8C0-9092E0720ED8}|HiddingTextInImage\\HiddingTextInImage.csproj|solutionrelative:hiddingtextinimage\\formcacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4D44B310-40FE-4FF1-A8C0-9092E0720ED8}|HiddingTextInImage\\HiddingTextInImage.csproj|c:\\users\\samuelschmd2\\documents\\prog\\m.malambu\\c#\\projets\\stegonographie\\hiddingtextinimage\\formtrouver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D44B310-40FE-4FF1-A8C0-9092E0720ED8}|HiddingTextInImage\\HiddingTextInImage.csproj|solutionrelative:hiddingtextinimage\\formtrouver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,19 +31,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FormCacher.cs",
+              "DocumentMoniker": "C:\\Users\\SAMUELSCHMD2\\Documents\\PROG\\M.malambu\\C#\\Projets\\Stegonographie\\HiddingTextInImage\\FormCacher.cs",
+              "RelativeDocumentMoniker": "HiddingTextInImage\\FormCacher.cs",
+              "ToolTip": "C:\\Users\\SAMUELSCHMD2\\Documents\\PROG\\M.malambu\\C#\\Projets\\Stegonographie\\HiddingTextInImage\\FormCacher.cs",
+              "RelativeToolTip": "HiddingTextInImage\\FormCacher.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAIA5wF4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T10:54:28.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FormTrouver.cs",
               "DocumentMoniker": "C:\\Users\\SAMUELSCHMD2\\Documents\\PROG\\M.malambu\\C#\\Projets\\Stegonographie\\HiddingTextInImage\\FormTrouver.cs",
               "RelativeDocumentMoniker": "HiddingTextInImage\\FormTrouver.cs",
               "ToolTip": "C:\\Users\\SAMUELSCHMD2\\Documents\\PROG\\M.malambu\\C#\\Projets\\Stegonographie\\HiddingTextInImage\\FormTrouver.cs",
               "RelativeToolTip": "HiddingTextInImage\\FormTrouver.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAgwH4AAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAIAwwHAAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-01T11:25:35.614Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Loader.cs",
               "DocumentMoniker": "C:\\Users\\SAMUELSCHMD2\\Documents\\PROG\\M.malambu\\C#\\Projets\\Stegonographie\\HiddingTextInImage\\Loader.cs",
               "RelativeDocumentMoniker": "HiddingTextInImage\\Loader.cs",
@@ -47,20 +64,18 @@
               "RelativeToolTip": "HiddingTextInImage\\Loader.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAACwAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T12:48:28.677Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T12:48:28.677Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Loader.cs [Design]",
               "DocumentMoniker": "C:\\Users\\SAMUELSCHMD2\\Documents\\PROG\\M.malambu\\C#\\Projets\\Stegonographie\\HiddingTextInImage\\Loader.cs",
               "RelativeDocumentMoniker": "HiddingTextInImage\\Loader.cs",
               "ToolTip": "C:\\Users\\SAMUELSCHMD2\\Documents\\PROG\\M.malambu\\C#\\Projets\\Stegonographie\\HiddingTextInImage\\Loader.cs [Design]",
               "RelativeToolTip": "HiddingTextInImage\\Loader.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T12:45:51.561Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-08T12:45:51.561Z"
             }
           ]
         }
