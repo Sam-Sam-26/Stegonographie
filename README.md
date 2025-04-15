@@ -11,6 +11,5 @@ This projet is currently not really complicated, the programs takes the pixel va
 * Check if the image actually has a message in it.
 * Get the hidden message from the image and display it.
 ## Issues
-* You have to close two times the closing loading form MessageBox.
 * The progress bar during the decryption is way too slow.
 * It looks like the program takes way too much RAM i dont understand why.
