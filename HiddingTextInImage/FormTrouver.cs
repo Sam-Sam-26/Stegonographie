@@ -63,8 +63,6 @@ namespace HiddingTextInImage
                         currentChar += Convert.ToString(pixel.B, 2).PadLeft(8, '0')[7];
 
                         form.Invoke((MethodInvoker)(() => form.Step()));
-
-                        // Simule un petit temps de traitement pour permettre au loader de suivre
                         Thread.Sleep(2);
 
                         while (currentChar.Length >= 8)
@@ -95,7 +93,7 @@ namespace HiddingTextInImage
             {
                 tbxMessage.Text = message + "\r\n------------------------------------------| end of message |-----------------------------------------";
             }
-            await form.End(); 
+            await form.End();
         }
 
 
@@ -127,17 +125,28 @@ namespace HiddingTextInImage
                 }
                 else
                 {
-                    lblFichierSelectionne.Text = "No file seleced";
+                    lblFichierSelectionne.Text = "No file selected";
                 }
             }
             if (filePath == "")
             {
-                MessageBox.Show("Vous devez séléctioner un fichier", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("You have to select a file", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
-                pbxImage.Image = Image.FromFile(filePath);
-                RecupererMessage();
+                try
+                {
+                    pbxImage.Image = Image.FromFile(filePath);
+                    RecupererMessage();
+                }catch(Exception ex)
+                {
+                    MessageBox.Show("Error opening the image", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    tbxMessage.Text = "";
+                    lblFichierSelectionne.Text = "No file selected";
+                    filePath = "";
+                    filename = "";
+                    pbxImage.Image = null;
+                }
             }
         }
 

@@ -7,6 +7,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -29,7 +30,7 @@ namespace HiddingTextInImage
             messageIndex = 0;
         }
 
-        public static void CacherTexte()
+        public async void CacherTexte()
         {
 
             int maxCapacity = imageFinale.Width * imageFinale.Height * 4; // 4 bits par pixel (A, R, G, B)
@@ -43,50 +44,65 @@ namespace HiddingTextInImage
             messageIndex = 0;
             stopCounter = 0;
 
-            for (int y = 0; y < imageFinale.Height; y++)
+            Loader form = new Loader();
+            form.Show();
+            form.Refresh();
+
+            await Task.Run(async () =>
             {
-                for (int x = 0; x < imageFinale.Width; x++)
+
+                for (int y = 0; y < imageFinale.Height; y++)
                 {
-                    Color pixel = imageFinale.GetPixel(x, y);
-
-                    // On convertit chaque composante en binaire, puis on remplace le dernier bit
-                    string[] binaryColors = new string[4];
-                    binaryColors[0] = Convert.ToString(pixel.A, 2).PadLeft(8, '0');
-                    binaryColors[1] = Convert.ToString(pixel.R, 2).PadLeft(8, '0');
-                    binaryColors[2] = Convert.ToString(pixel.G, 2).PadLeft(8, '0');
-                    binaryColors[3] = Convert.ToString(pixel.B, 2).PadLeft(8, '0');
-
-                    for (int i = 0; i < 4; i++) // A, R, G, B
+                    for (int x = 0; x < imageFinale.Width; x++)
                     {
-                        if (messageIndex < binaryMessage.Length)
+                        Color pixel = imageFinale.GetPixel(x, y);
+
+                        // On convertit chaque composante en binaire, puis on remplace le dernier bit
+                        string[] binaryColors = new string[4];
+                        binaryColors[0] = Convert.ToString(pixel.A, 2).PadLeft(8, '0');
+                        binaryColors[1] = Convert.ToString(pixel.R, 2).PadLeft(8, '0');
+                        binaryColors[2] = Convert.ToString(pixel.G, 2).PadLeft(8, '0');
+                        binaryColors[3] = Convert.ToString(pixel.B, 2).PadLeft(8, '0');
+
+                        form.Invoke((MethodInvoker)(() => form.Step()));
+                        Thread.Sleep(2);
+
+                        for (int i = 0; i < 4; i++) // A, R, G, B
                         {
-                            // Remplace le dernier bit
-                            var colorBits = binaryColors[i].ToCharArray();
-                            colorBits[7] = binaryMessage[messageIndex];
-                            binaryColors[i] = new string(colorBits);
-                            messageIndex++;
+                            if (messageIndex < binaryMessage.Length)
+                            {
+                                // Remplace le dernier bit
+                                var colorBits = binaryColors[i].ToCharArray();
+                                colorBits[7] = binaryMessage[messageIndex];
+                                binaryColors[i] = new string(colorBits);
+                                messageIndex++;
+                            }
+                            else if (stopCounter < 8) // Remplissage de fin pour détecter la fin du message
+                            {
+                                var colorBits = binaryColors[i].ToCharArray();
+                                colorBits[7] = '0';
+                                binaryColors[i] = new string(colorBits);
+                                stopCounter++;
+                            }
                         }
-                        else if (stopCounter < 8) // Remplissage de fin pour détecter la fin du message
+
+                        // Reconstruire le pixel
+                        int newA = Convert.ToInt32(binaryColors[0], 2);
+                        int newR = Convert.ToInt32(binaryColors[1], 2);
+                        int newG = Convert.ToInt32(binaryColors[2], 2);
+                        int newB = Convert.ToInt32(binaryColors[3], 2);
+
+                        imageFinale.SetPixel(x, y, Color.FromArgb(newA, newR, newG, newB));
+
+                        if (messageIndex >= binaryMessage.Length && stopCounter >= 8)
                         {
-                            var colorBits = binaryColors[i].ToCharArray();
-                            colorBits[7] = '0';
-                            binaryColors[i] = new string(colorBits);
-                            stopCounter++;
+                            form.Invoke((MethodInvoker)(() => form.End()));
+                            return;
                         }
+                             // On arrête une fois que le message + le stop ont été insérés
                     }
-
-                    // Reconstruire le pixel
-                    int newA = Convert.ToInt32(binaryColors[0], 2);
-                    int newR = Convert.ToInt32(binaryColors[1], 2);
-                    int newG = Convert.ToInt32(binaryColors[2], 2);
-                    int newB = Convert.ToInt32(binaryColors[3], 2);
-
-                    imageFinale.SetPixel(x, y, Color.FromArgb(newA, newR, newG, newB));
-
-                    if (messageIndex >= binaryMessage.Length && stopCounter >= 8)
-                        return; // On arrête une fois que le message + le stop ont été insérés
                 }
-            }
+            });
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

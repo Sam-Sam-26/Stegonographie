@@ -20,8 +20,11 @@ namespace HiddingTextInImage
 
         private void Loader_Load(object sender, EventArgs e)
         {
-            Bitmap image = new Bitmap(FormTrouver.filePath);
-            pgbLoader.Maximum = image.Height * image.Width;
+            if(FormTrouver.filePath != "")
+            {
+                Bitmap image = new Bitmap(FormTrouver.filePath);
+                pgbLoader.Maximum = image.Height * image.Width;
+            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -34,15 +37,15 @@ namespace HiddingTextInImage
             if (pgbLoader.Value < pgbLoader.Maximum)
             {
                 pgbLoader.PerformStep();
-                pgbLoader.Refresh(); // force la mise à jour visuelle
+                pgbLoader.Refresh(); // force the visual update
             }
         }
 
         public async Task End()
         {
             pgbLoader.Value = pgbLoader.Maximum;
-            pgbLoader.Refresh(); // force affichage final
-            await Task.Delay(800); // meilleure que Thread.Sleep
+            pgbLoader.Refresh(); // force the final result
+            await Task.Delay(800);
             this.Hide();
         }
 
