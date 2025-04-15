@@ -49,6 +49,9 @@ namespace HiddingTextInImage
             this.Hide();
         }
 
-
+        private void Loader_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

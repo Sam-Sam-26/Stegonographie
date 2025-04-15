@@ -61,8 +61,15 @@ namespace HiddingTextInImage
                         currentChar += Convert.ToString(pixel.R, 2).PadLeft(8, '0')[7];
                         currentChar += Convert.ToString(pixel.G, 2).PadLeft(8, '0')[7];
                         currentChar += Convert.ToString(pixel.B, 2).PadLeft(8, '0')[7];
+                        try
+                        {
+                            form.Invoke((MethodInvoker)(() => form.Step()));
+                        }catch (Exception ex)
+                        {
+                            MessageBox.Show("Error while decrypting the image", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
 
-                        form.Invoke((MethodInvoker)(() => form.Step()));
                         Thread.Sleep(2);
 
                         while (currentChar.Length >= 8)

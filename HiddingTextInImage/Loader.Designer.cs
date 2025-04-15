@@ -49,6 +49,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Loader";
             this.Text = "Working...";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Loader_FormClosed);
             this.Load += new System.EventHandler(this.Loader_Load);
             this.ResumeLayout(false);
 
