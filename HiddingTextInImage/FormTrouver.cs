@@ -41,7 +41,7 @@ namespace HiddingTextInImage
         {
             Loader form = new Loader();
             form.Show();
-            form.Refresh(); // force affichage visuel
+            form.Refresh();
 
             string message = "";
             bool stop = false;
@@ -66,11 +66,9 @@ namespace HiddingTextInImage
                             form.Invoke((MethodInvoker)(() => form.Step()));
                         }catch (Exception ex)
                         {
-                            MessageBox.Show("Error while decrypting the image", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning); // Changer en disant que l'opération a été annulée serait mieux conceptuellement
+                            MessageBox.Show("Canceled the decryption", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             return;
                         }
-
-                        // Thread.Sleep(2); Inutile le async fait son taff et donc la barre devient plus vite.
 
                         while (currentChar.Length >= 8)
                         {

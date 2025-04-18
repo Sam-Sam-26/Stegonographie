@@ -70,3 +70,16 @@ C:\Users\Admin\Documents\GitHub\Stegonographie\HiddingTextInImage\obj\Debug\Hidd
 C:\Users\Admin\Documents\GitHub\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Documents\GitHub\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.exe
 C:\Users\Admin\Documents\GitHub\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.pdb
+C:\Users\samue\Documents\C#\Stegonographie\HiddingTextInImage\bin\Debug\HiddingTextInImage.exe.config
+C:\Users\samue\Documents\C#\Stegonographie\HiddingTextInImage\bin\Debug\HiddingTextInImage.exe
+C:\Users\samue\Documents\C#\Stegonographie\HiddingTextInImage\bin\Debug\HiddingTextInImage.pdb
+C:\Users\samue\Documents\C#\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.csproj.AssemblyReference.cache
+C:\Users\samue\Documents\C#\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.Form1.resources
+C:\Users\samue\Documents\C#\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.FormCacher.resources
+C:\Users\samue\Documents\C#\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.FormTrouver.resources
+C:\Users\samue\Documents\C#\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.Loader.resources
+C:\Users\samue\Documents\C#\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.Properties.Resources.resources
+C:\Users\samue\Documents\C#\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.csproj.GenerateResource.cache
+C:\Users\samue\Documents\C#\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.csproj.CoreCompileInputs.cache
+C:\Users\samue\Documents\C#\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.exe
+C:\Users\samue\Documents\C#\Stegonographie\HiddingTextInImage\obj\Debug\HiddingTextInImage.pdb
